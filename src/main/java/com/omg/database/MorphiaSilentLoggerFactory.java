@@ -37,7 +37,7 @@ public class MorphiaSilentLoggerFactory implements LogrFactory {
         public void debug(String format, Object... arg) {}
 
         @Override
-        public void debug(String msg, Throwable t) {}
+        public void debug(String msg, Throwable t) {}{}
 
         @Override
         public boolean isInfoEnabled() {return false;}

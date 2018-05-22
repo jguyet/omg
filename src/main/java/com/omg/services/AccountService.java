@@ -30,6 +30,7 @@ public class AccountService {
 
     public boolean accountExists(String username, String password) {
         Query<Account> query = OmgApplication.database.getAccountCollection().createQuery();
+
         query.filter("username =", username);
         query.filter("password =", password);
         query.limit(1);
